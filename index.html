@@ -1,65 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оно тебе надо — аукцион вещей с историей</title>
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
 <body>
   <header class="header">
     <nav class="header__menu">
-      <!-- Ссылки меню -->
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+          <a class="header__menu-link header__menu-link_active">купить</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#lots">найти</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#about">отдать</a>
+        </li>
+      </ul>
     </nav>
     <a class="header__logo">
-      <!-- Логотип (img или svg) -->
+      <img src="./images/logo.svg" alt="Логотип проекта" class="header__logo-image">
     </a>
     <address class="address header__address">
-      <!-- Контакты -->
+      <a href="tel:+79101234567">+7 (910) 123-45-67</a><br>
+      <a href="mailto:no-reply@collect.com">no-reply@collect.com</a><br>
+      ул. Кальварийская, 16, Минск, Беларусь
     </address>
   </header>
 
   <main class="main">
-    <!-- Секция 1: Cover -->
-    <section class="cover">
-      <h1 class="cover__title">...</h1>
+    <section class="cover overlay">
+      <h1 class="cover__title">Оно тебе надо</h1>
       <div class="cover__description">
-        <p class="cover__description-text">...</p>
-        <button class="button">...</button>
+        <p class="cover__description-text">Аукцион вещей с историей</p>
+        <button class="button" type="button">Сделать ставку</button>
       </div>
     </section>
 
-    <!-- Секция 2: Lots -->
-    <section class="lots">
-      <h2 class="lots__heading">...</h2>
+    <section id="lots" class="lots">
+      <h2 class="lots__heading">Лоты</h2>
       <ul class="lots__list">
         <li class="lots__list-item">
           <a href="#" class="card-link">
-            <article class="card">...</article>
+            <article class="card overlay">
+              <h3 class="card__title">Заброшенный замок</h3>
+              <p class="card__text">Лот №1. История этого замка полна тайн...</p>
+            </article>
           </a>
         </li>
+        <!-- Другие карточки -->
       </ul>
       <a href="#" class="lots__look-more">Посмотреть больше</a>
     </section>
 
-    <!-- Секция 3: About -->
-    <section class="about">
-      <div class="about__column">...</div>
+    <section id="about" class="about">
       <div class="about__column">
-        <h2 class="about__title">...</h2>
-        <div class="about__text">...</div>
+        <!-- Место для логотипа/иконки -->
+      </div>
+      <div class="about__column">
+        <h2 class="about__title">Об аукционе</h2>
+        <div class="about__text">
+          <p>Мы собираем вещи, которые больше не нужны владельцам, но могут стать сокровищем для вас.</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <address class="address footer__address">...</address>
-    <nav class="footer__menu">...</nav>
-    <ul class="footer__social-list">...</ul>
+    <address class="address footer__address">
+      <a href="tel:+79101234567">+7 (910) 123-45-67</a><br>
+      <a href="mailto:no-reply@collect.com">no-reply@collect.com</a>
+    </address>
+    <nav class="footer__menu">
+      <!-- Повтор ссылок меню -->
+    </nav>
+    <ul class="footer__social-list">
+      <!-- Ссылки на соцсети -->
+    </ul>
   </footer>
 </body>
 </html>
