@@ -6,7 +6,6 @@ body {
   font-family: var(--main-font);
 }
 
-/* Общие отступы */
 .cover,
 .lots,
 .about {
@@ -14,7 +13,6 @@ body {
   margin-bottom: 180px;
 }
 
-/* HEADER */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -52,7 +50,6 @@ body {
   line-height: 1.5;
 }
 
-/* COVER */
 .cover {
   position: relative;
   background-image: url('../images/cover-background.jpg');
@@ -99,7 +96,6 @@ body {
   color: white;
 }
 
-/* LOTS */
 .lots__card-list {
   display: flex;
   gap: 25px;
@@ -119,7 +115,6 @@ body {
   background-size: cover;
 }
 
-/* ABOUT */
 .about {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -139,7 +134,6 @@ body {
   width: 150px;
 }
 
-/* FOOTER */
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
