@@ -3,85 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Оно тебе надо - аукцион вещей с историей</title>
+  <title>Оно тебе надо — аукцион вещей с историей</title>
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <header class="header">
-    <nav class="header__menu">
-      <ul class="header__menu-list">
-        <li class="header__menu-item">
-          <a class="header__menu-link header__menu-link_active">купить</a>
-        </li>
-        <li class="header__menu-item">
-          <a class="header__menu-link" href="#lots">найти</a>
-        </li>
-        <li class="header__menu-item">
-          <a class="header__menu-link" href="#about">отдать</a>
-        </li>
-      </ul>
-    </nav>
-    <a class="header__logo">
-      <img src="./images/logo.svg" alt="Логотип проекта" class="header__logo-image">
-    </a>
-    <address class="address header__address">
-      <a href="tel:+79101234567">+7 (910) 123-45-67</a><br>
-      <a href="mailto:no-reply@collect.com">no-reply@collect.com</a><br>
-      ул. Кальварийская, 16, Минск, Беларусь
-    </address>
-  </header>
 
-  <main class="main">
-    <section class="cover overlay">
-      <h1 class="cover__title">Оно тебе надо</h1>
-      <div class="cover__description">
-        <p class="cover__description-text">Аукцион вещей с историей</p>
-        <button class="button" type="button">Сделать ставку</button>
-      </div>
-    </section>
-
-    <section id="lots" class="lots">
-      <h2 class="lots__heading">Лоты</h2>
-      <ul class="lots__list">
-        <li class="lots__list-item">
-          <a href="#" class="card-link">
-            <article class="card overlay">
-              <h3 class="card__title">Заброшенный замок</h3>
-              <p class="card__text">Лот №1. История этого замка полна тайн...</p>
-            </article>
-          </a>
-        </li>
-        <!-- Другие карточки -->
-      </ul>
-      <a href="#" class="lots__look-more">Посмотреть больше</a>
-    </section>
-
-    <section id="about" class="about">
-      <div class="about__column">
-        <!-- Место для логотипа/иконки -->
-      </div>
-      <div class="about__column">
-        <h2 class="about__title">Об аукционе</h2>
-        <div class="about__text">
-          <p>Мы собираем вещи, которые больше не нужны владельцам, но могут стать сокровищем для вас.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <address class="address footer__address">
-      <a href="tel:+79101234567">+7 (910) 123-45-67</a><br>
-      <a href="mailto:no-reply@collect.com">no-reply@collect.com</a>
-    </address>
-    <nav class="footer__menu">
-      <!-- Повтор ссылок меню -->
-    </nav>
-    <ul class="footer__social-list">
-      <!-- Ссылки на соцсети -->
+<header class="header">
+  <nav class="header__menu">
+    <ul class="header__links-list">
+      <li class="header__links-list-item header__links-list-item_no-bullit">
+        <a class="header__link header__link_active" href="#">купить</a>
+      </li>
+      <li class="header__links-list-item">
+        <a class="header__link" href="#lots">найти</a>
+      </li>
+      <li class="header__links-list-item">
+        <a class="header__link" href="#about">отдать</a>
+      </li>
     </ul>
-  </footer>
+  </nav>
+
+  <a class="header__logo" href="#">
+    <img src="./images/logo.svg" alt="Логотип" class="header__logo-image">
+  </a>
+
+  <address class="address header__address">
+    <a href="tel:+79101234567">+7 (910) 123-45-67</a><br>
+    <a href="mailto:no-reply@collect.com">no-reply@collect.com</a><br>
+    ул. Кальварийская, 16, Минск, Беларусь
+  </address>
+</header>
+
+<main>
+
+  <section class="cover">
+    <div class="overlay"></div>
+
+    <h1 class="cover__title">
+      <span class="aligned-text">Оно</span>
+      <span class="aligned-text aligned-text_center">тебе</span>
+      <span class="aligned-text aligned-text_right">надо</span>
+    </h1>
+
+    <div class="cover__description">
+      <p class="cover__description-text">Аукцион вещей с историей</p>
+      <button class="bet-button">Сделать ставку</button>
+    </div>
+  </section>
+
+  <section id="lots" class="lots">
+    <h2 class="lots__heading">Лоты</h2>
+
+    <ul class="lots__card-list">
+      <li class="lots__card-list-item">
+        <a href="#" class="card-link">
+          <article class="card card_type_film">
+            <div class="overlay"></div>
+            <h3 class="card__title">Заброшенный замок</h3>
+            <p class="card__text">Лот №1. История этого замка полна тайн...</p>
+          </article>
+        </a>
+      </li>
+    </ul>
+
+    <a href="#" class="lots__look-more-link">Посмотреть больше</a>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about__column">
+      <div class="about__logo">
+        <img src="./images/logo-white.svg" alt="Логотип" class="about__logo-image">
+      </div>
+    </div>
+
+    <div class="about__column">
+      <h2 class="about__title">Об аукционе</h2>
+
+      <div class="about__text">
+        <p>Мы собираем вещи, которые больше не нужны владельцам, но могут стать сокровищем для вас.</p>
+        <p>Каждый лот — это уникальная история, которая ждёт нового владельца.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+
+  <address class="address">
+    <a href="tel:+79101234567">+7 (910) 123-45-67</a><br>
+    <a href="mailto:no-reply@collect.com">no-reply@collect.com</a>
+  </address>
+
+  <nav class="footer__menu">
+    <ul class="footer__menu-list">
+      <li><a href="#" class="footer__menu-link footer__menu-link_active">купить</a></li>
+      <li><a href="#lots" class="footer__menu-link">найти</a></li>
+      <li><a href="#about" class="footer__menu-link">отдать</a></li>
+    </ul>
+  </nav>
+
+  <ul class="footer__social-list">
+    <li>
+      <a href="#"><img src="./images/youtube.svg" alt="YouTube"></a>
+    </li>
+    <li>
+      <a href="#"><img src="./images/vk.svg" alt="VK"></a>
+    </li>
+    <li>
+      <a href="#"><img src="./images/pinterest.svg" alt="Pinterest"></a>
+    </li>
+  </ul>
+  
+</footer>
 </body>
+  
 </html>
