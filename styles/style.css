@@ -1,7 +1,67 @@
-.cover{
-  
+:root {
+  --main-font: "Inter", Arial, sans-serif;
 }
 
-.description{
-  
+/* Шаг 3: Глобальная стилизация */
+.header,
+.cover,
+.lots,
+.about,
+.footer {
+  padding: 0 50px;
+  margin-bottom: 180px;
+}
+
+.footer {
+  margin-bottom: 0;
+  padding-bottom: 92px;
+}
+
+/* Общий класс для оверлея (затемнения) */
+.overlay {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Градиент создает полупрозрачный слой поверх картинки */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                    url('../images/cover-background.jpg');
+}
+
+/* Шаг 4: Детальная шапка */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 32px;
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+}
+
+.header__address {
+  justify-self: end;
+  max-width: 240px;
+  font-style: normal;
+  line-height: 1.5;
+  font-family: var(--main-font);
+  font-size: 18px;
+}
+
+/* Стили для ссылок в адресе */
+.address a {
+  border-bottom: 1px solid currentColor;
+}
+
+.address a:hover {
+  border-bottom: none;
 }
